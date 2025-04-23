@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.home {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerContainer {
+  width: auto;
+  margin-left: 30px;
+}
+
+.home .headerContainer h1 {
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 65px;
+  font-family: "Lexend", sans-serif;
+  color: #ecf0f1;
+}
+
+.home .headerContainer p {
+  margin-top: 15px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #ecf0f1;
+}
+
+.headerContainer button {
+  background-color: #ecf0f1;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 180px;
+  text-decoration: none;
+  color: #130f40;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.headerContainer button:hover {
+  background-color: #f0932b;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+/* mobile view  */
+
+@media only screen and (max-width: 600px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  .headerContainer {
+    margin-left: 0;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #130f40;
+    color: white;
+  }
+  .home .headerContainer h1 {
+    font-size: 35px;
+    height: 30px;
+    margin: 30px 0px;
+    color: white;
+  }
+  .home .headerContainer p {
+    font-size: 20px;
+    color: white;
+  }
+  .headerContainer button {
+    background-color: white;
+    color: #130f40;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+}
